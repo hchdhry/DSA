@@ -12,4 +12,7 @@ foreach (string item in stack)
 {
     Console.WriteLine(item);
 }
+string four = stack.Peek();
+Console.WriteLine($"{four} is at the top");
+Console.WriteLine(stack.Contains(four));
 
