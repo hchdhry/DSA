@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿LinkedList<string> theList = new LinkedList<string>();
+theList.AddFirst("test1");
+LinkedListNode<string>? linkedListNode = theList.Last;
+theList.AddAfter(linkedListNode,"ksmkxsmxk");
+
+
+
+foreach (string item in theList)
+{
+    Console.WriteLine(item);
+}
