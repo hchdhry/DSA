@@ -5,7 +5,7 @@ theList.AddAfter(linkedListNode,"ksmkxsmxk");
 
 
 
-foreach (string item in theList)
+foreach (var item in theList)
 {
     Console.WriteLine(item);
 }
