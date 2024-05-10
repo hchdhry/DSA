@@ -8,6 +8,12 @@ public class App {
     dynamicArray.add("yee2");
      dynamicArray.add("yee3");
      dynamicArray.add("yee4");
+     dynamicArray.add("yee4");
+     dynamicArray.add("yee4");
+     dynamicArray.add("yee4");
+     dynamicArray.add("yee4");
+     dynamicArray.add("yee4");
+    
    
     System.out.println(dynamicArray.search("yee3"));
     dynamicArray.insert(2, "xxxxx");

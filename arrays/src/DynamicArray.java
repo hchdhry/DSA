@@ -16,7 +16,7 @@ public class DynamicArray {
 
     public void add(Object data)
     {
-        if(size >= capacity)
+        if(size >= capacity-2)
         {
             grow();
         }
@@ -75,6 +75,14 @@ public class DynamicArray {
 
     private void grow()
     {
+        int newCapacity = (int)capacity*2;
+        Object[] newArray = new Object[newCapacity];
+        for(int i = 0;i<capacity;i++)
+        {
+            newArray[i] = array[i];
+        }
+        capacity = newCapacity;
+        array = newArray;
 
     }
     
