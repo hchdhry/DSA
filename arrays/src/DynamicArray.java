@@ -24,6 +24,7 @@ public class DynamicArray {
         size++;
 
     }
+   
     public void insert(int index,Object data)
     {
         if(size >= capacity)
@@ -31,8 +32,12 @@ public class DynamicArray {
             grow();
         }
        
+        for (int i = size; i > index; i--) {
+            array[i] = array[i-1];
+        }
         array[index] = data;
         size++;
+       
 
     }
     public void delete(Object data)
@@ -89,6 +94,8 @@ public class DynamicArray {
             result+=object;
         }
         System.out.println(result);
+        System.out.println(array.length);
+        System.out.println(this.size);
         return result;
     }
 }
